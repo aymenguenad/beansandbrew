@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #121212;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: baseline;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color:#121212;
+}
+
+nav img {
+  width: 100%;
+  transform: scale(1);
+  transition: transform 0.1s ease-in-out;
+}
+
+.logoBox {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav img:hover {
+  transform: scale(1.05);
+}
+
+.navBar {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f4a628;
+  border-radius: 50px;
+}
+
+.navBar a {
+  font-size: 1.5vw;
+  color: #121212;
+  text-decoration: none;
+  transform: scale(1);
+  transition: transform 0.1s ease-in-out;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navBar a:hover {
+  transform: scale(1.1);
+}
+
+nav button {
+  width: 10%;
+  height: 65%;
+  border-radius: 20px;
+  border: none;
+  background-color: #f4a628;
+  font-size: 1.5vw;
+  transform: scale(1);
+  transition: transform 0.1s ease-in-out;
+}
+
+nav button:hover {
+  transform: scale(1.05);
+}
+
+#cart {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+#backgroundImg {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  z-index: -1;
+}
+
+.homePage {
+  width: 100%;
+  height: auto;
+}
+
+.heroSection {
+  width: 100%;
+  height: 90vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  margin: 50px 0px ;
+}
+
+.cta {
+  width: 95%;
+  height: 60%;
+  background-color: #f4a628;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px ;
+}
+
+.ctaText {
+  width: 60%;
+  height: 100%;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.ctaText h1 {
+  color: #121212;
+  width: 100%;
+  margin: 20px 0px 0px 20px;
+  font-size: 3.5vw;
+  font-family: "Skranji", system-ui;
+}
+
+.ctaText button {
+  font-family: "Skranji", system-ui;
+  width: 50%;
+  height: 20%;
+  font-size: 3vw;
+  background-color: #121212;
+  color: #f4a628;
+  border: none;
+  border-radius: 20px;
+  transform: scale(1);
+  transition: transform 0.1s ease-in-out;
+}
+
+.ctaText button:hover {
+  transform: scale(1.05);
+}
+
+#cupofcoffee {
+  width: 100%;
+  position: relative;
+  transform: translateY(-8%);
+  left: -10%;
+  filter: brightness(100%) contrast(110%) drop-shadow(50px 50px 20px rgb(0, 0, 0, 0.8));
+}
+
+.productSection {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px ;
+}
+
+#psBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 1;
+  z-index: -1;
+  filter: brightness(100%);
+}
+
+.psBoxes {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.psBox {
+  opacity: 1;
+  width: 25%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.card {
+  background-color: rgb(244, 166, 40);
+  opacity: 1;
+  width: 80%;
+  height: 80%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card h1 {
+  font-family: "Skranji", system-ui;
+  color: #6d3516;
+  font-size: 2vw;
+  width: 100%;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+}
+
+.card p {
+  font-size: 1.3vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 95%;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+  color: #6d3516;
+}
+
+.card div {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.card > div h2 {
+  color: #6d3516;
+  font-size: 2vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card > div button {
+  width: 30%;
+  height: 80%;
+  border: none;
+  background-color: #6d3516;
+  font-size: 2.5vw;
+  padding: 0;
+  color: #f4a628;
+  border-radius: 20px;
+  font-family: "Skranji", system-ui;
+}
+
+.psBoxImg {
+  background-color: rgb(244, 166, 40);
+  opacity: 1;
+  width: 60%;
+  height: 25%;
+  border-radius: 40px;
+  position: relative;
+  top: 11%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 5px 5px 5px rgb(18, 18, 18, 0.5);
+}
+
+.psBoxImg img {
+  position: relative;
+  top: -80%;
+}
+
+.ourStorySection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+  flex-direction: column;
+  margin: 50px 0px ;
+}
+
+.story {
+  width: 95%;
+  height: 65%;
+  background-color: #f4a628;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.story div {
+  width: 40%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.5vw;
+}
+
+.ourCoffeeShops {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myCoffeeShop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.coffeeShopInfos {
+  width: 65%;
+  height: 50%;
+  border-radius: 20px;
+  display: flex;
+  background-color: rgb(255, 255, 255,0.7);
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(33, 33, 33);
+  padding: 20px;
+}
+
+.coffeeShopInfos div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction:column;
+  width: 40%;
+  height: 70%;
+  gap: 20px;
+}
+
+.coffeeShopInfos h1 {
+  font-size: 3.5vw;
+  width: 100%;
+}
+
+.coffeeShopInfos p {
+  font-size: 1.2vw;
+  text-align: justify;
+}
+
+.coffeeShopInfos li {
+  margin: 0px 0px 0px 30px;
+}
+
+
+
+
+footer {
+  width: 100%;
+  height: 50vh;
+  background-color: #121212;
+}
